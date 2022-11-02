@@ -7,19 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35B674E72912EDDD00A08FB4 /* TestAttributedStringsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B674E62912EDDD00A08FB4 /* TestAttributedStringsApp.swift */; };
-		35B674E92912EDDD00A08FB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B674E82912EDDD00A08FB4 /* ContentView.swift */; };
 		35B674EB2912EDE000A08FB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35B674EA2912EDE000A08FB4 /* Assets.xcassets */; };
-		35B674EF2912EDE000A08FB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35B674EE2912EDE000A08FB4 /* Preview Assets.xcassets */; };
+		35B674F62912EE5600A08FB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B674F52912EE5600A08FB4 /* AppDelegate.swift */; };
+		35B674FB2912EEB400A08FB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B674FA2912EEB400A08FB4 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		35B674E32912EDDD00A08FB4 /* TestAttributedStrings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAttributedStrings.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		35B674E62912EDDD00A08FB4 /* TestAttributedStringsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAttributedStringsApp.swift; sourceTree = "<group>"; };
-		35B674E82912EDDD00A08FB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		35B674EA2912EDE000A08FB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35B674EC2912EDE000A08FB4 /* TestAttributedStrings.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestAttributedStrings.entitlements; sourceTree = "<group>"; };
-		35B674EE2912EDE000A08FB4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		35B674F52912EE5600A08FB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		35B674F82912EE7100A08FB4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		35B674FA2912EEB400A08FB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +37,7 @@
 			children = (
 				35B674E52912EDDD00A08FB4 /* TestAttributedStrings */,
 				35B674E42912EDDD00A08FB4 /* Products */,
+				35B674F72912EE7100A08FB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,21 +52,20 @@
 		35B674E52912EDDD00A08FB4 /* TestAttributedStrings */ = {
 			isa = PBXGroup;
 			children = (
-				35B674E62912EDDD00A08FB4 /* TestAttributedStringsApp.swift */,
-				35B674E82912EDDD00A08FB4 /* ContentView.swift */,
+				35B674F52912EE5600A08FB4 /* AppDelegate.swift */,
+				35B674FA2912EEB400A08FB4 /* ViewController.swift */,
 				35B674EA2912EDE000A08FB4 /* Assets.xcassets */,
 				35B674EC2912EDE000A08FB4 /* TestAttributedStrings.entitlements */,
-				35B674ED2912EDE000A08FB4 /* Preview Content */,
 			);
 			path = TestAttributedStrings;
 			sourceTree = "<group>";
 		};
-		35B674ED2912EDE000A08FB4 /* Preview Content */ = {
+		35B674F72912EE7100A08FB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				35B674EE2912EDE000A08FB4 /* Preview Assets.xcassets */,
+				35B674F82912EE7100A08FB4 /* UIKit.framework */,
 			);
-			path = "Preview Content";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +126,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35B674EF2912EDE000A08FB4 /* Preview Assets.xcassets in Resources */,
 				35B674EB2912EDE000A08FB4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35B674E92912EDDD00A08FB4 /* ContentView.swift in Sources */,
-				35B674E72912EDDD00A08FB4 /* TestAttributedStringsApp.swift in Sources */,
+				35B674FB2912EEB400A08FB4 /* ViewController.swift in Sources */,
+				35B674F62912EE5600A08FB4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +262,6 @@
 				CODE_SIGN_ENTITLEMENTS = TestAttributedStrings/TestAttributedStrings.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TestAttributedStrings/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -285,10 +282,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.monvel.TestAttributedStrings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -300,7 +299,6 @@
 				CODE_SIGN_ENTITLEMENTS = TestAttributedStrings/TestAttributedStrings.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TestAttributedStrings/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -321,10 +319,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.monvel.TestAttributedStrings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
