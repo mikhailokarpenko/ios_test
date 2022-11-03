@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        label.attributedText = FontFactory.shared.buildTextFont(forStyle: .tw4).attributedString("test")
+        label.attributedText = .tw1.text("test")
     }
 
 

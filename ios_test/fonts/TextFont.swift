@@ -6,40 +6,24 @@
 
 import UIKit
 
-private protocol TextFontJSON {
-    var upperCase: Bool { get }
-    var underlined: Bool { get }
-}
-
-final class TextFont: AbstractFont, TextFontJSON {
-    var upperCase: Bool
-    var underlined: Bool
-
+final class TextFont: AbstractFont {
     init(
         fontName: String,
         size: CGFloat,
         lineHeight: CGFloat?,
-        uppercase: Bool = false,
-        underlined: Bool = false,
         charsSpacing: CGFloat? = nil
     ) {
-        self.upperCase = uppercase
-        self.underlined = underlined
         super.init(fontName: fontName, size: size, lineHeight: lineHeight, charsSpacing: charsSpacing)
     }
 
-    override func attributes(withParagraphStyle paragraphStyle: NSParagraphStyle?) -> [NSAttributedString.Key: Any] {
-        var attrs = super.attributes(withParagraphStyle: paragraphStyle)
-
-        if self.underlined {
-            attrs[.underlineStyle] = NSUnderlineStyle.single.rawValue
-        }
-
-        return attrs
-    }
-
-    func attributedString(_ string: String) -> NSAttributedString {
+    func text(_ string: String) -> NSAttributedString {
         let attrs = self.attributes
         return NSAttributedString(string: string, attributes: attrs)
+    }
+}
+
+extension NSAttributedString {
+    static var tw1: TextFont {
+        return TextFont(fontName: "Gotham-Bold", size: 80, lineHeight: 80)
     }
 }

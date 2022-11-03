@@ -16,7 +16,6 @@
 		35B6752229140F4D00A08FB4 /* AbstractFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6752129140F4D00A08FB4 /* AbstractFont.swift */; };
 		35B6752429140F6B00A08FB4 /* TextFontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6752329140F6B00A08FB4 /* TextFontStyle.swift */; };
 		35B6752629140F8300A08FB4 /* TextFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6752529140F8300A08FB4 /* TextFont.swift */; };
-		35B6752829140FAA00A08FB4 /* FontFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6752729140FAA00A08FB4 /* FontFactory.swift */; };
 		35B675322914176400A08FB4 /* Gotham-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 35B6752A2914176300A08FB4 /* Gotham-Medium.otf */; };
 		35B675332914176400A08FB4 /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 35B6752B2914176300A08FB4 /* Gotham-Book.otf */; };
 		35B675352914176400A08FB4 /* Gotham-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 35B6752D2914176300A08FB4 /* Gotham-LightItalic.otf */; };
@@ -39,7 +38,6 @@
 		35B6752129140F4D00A08FB4 /* AbstractFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFont.swift; sourceTree = "<group>"; };
 		35B6752329140F6B00A08FB4 /* TextFontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFontStyle.swift; sourceTree = "<group>"; };
 		35B6752529140F8300A08FB4 /* TextFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFont.swift; sourceTree = "<group>"; };
-		35B6752729140FAA00A08FB4 /* FontFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontFactory.swift; sourceTree = "<group>"; };
 		35B6752A2914176300A08FB4 /* Gotham-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Medium.otf"; sourceTree = "<group>"; };
 		35B6752B2914176300A08FB4 /* Gotham-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Book.otf"; sourceTree = "<group>"; };
 		35B6752C2914176300A08FB4 /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Bold.otf"; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 				35B6752129140F4D00A08FB4 /* AbstractFont.swift */,
 				35B6752329140F6B00A08FB4 /* TextFontStyle.swift */,
 				35B6752529140F8300A08FB4 /* TextFont.swift */,
-				35B6752729140FAA00A08FB4 /* FontFactory.swift */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -202,7 +199,6 @@
 				35B6750F2912FC0400A08FB4 /* ViewController.swift in Sources */,
 				35B6750B2912FC0400A08FB4 /* AppDelegate.swift in Sources */,
 				35B6752629140F8300A08FB4 /* TextFont.swift in Sources */,
-				35B6752829140FAA00A08FB4 /* FontFactory.swift in Sources */,
 				35B6750D2912FC0400A08FB4 /* SceneDelegate.swift in Sources */,
 				35B6752429140F6B00A08FB4 /* TextFontStyle.swift in Sources */,
 			);

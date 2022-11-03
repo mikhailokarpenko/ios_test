@@ -53,11 +53,6 @@ class AbstractFont: CommonFontAttributes {
         return self.attributes(withParagraphStyle: style)
     }
 
-    func attributes(with textAlignment: NSTextAlignment, lineBreakMode: NSLineBreakMode) -> [NSAttributedString.Key: Any] {
-        let style = self.paragraphStyle(forTextAligment: textAlignment, lineBreakMode: lineBreakMode)
-        return self.attributes(withParagraphStyle: style)
-    }
-
     func attributes(withParagraphStyle paragraphStyle: NSParagraphStyle?) -> [NSAttributedString.Key: Any] {
         var attr: [NSAttributedString.Key: Any] = [
             .font: self.font,
@@ -71,20 +66,10 @@ class AbstractFont: CommonFontAttributes {
         return attr
     }
 
-    func attributes(forLabel label: UILabel) -> [NSAttributedString.Key: Any]? {
-        let style = self.paragraphStyle(forLabel: label)
-        return self.attributes(withParagraphStyle: style)
-    }
-
     func paragraphStyle(forTextAligment textAligment: NSTextAlignment) -> NSParagraphStyle? {
-        let style = paragraphStyle(forTextAligment: textAligment, lineBreakMode: .byWordWrapping)
-        return style
-    }
-
-    func paragraphStyle(forTextAligment textAligment: NSTextAlignment, lineBreakMode: NSLineBreakMode) -> NSParagraphStyle? {
         let style = NSMutableParagraphStyle()
         style.alignment = textAligment
-        style.lineBreakMode = lineBreakMode
+        style.lineBreakMode = .byWordWrapping
 
         if self.lineHeight != abstractFontUndefinedLineHeight {
             let lineHeightMultiple = lineHeight / font.lineHeight
@@ -97,14 +82,6 @@ class AbstractFont: CommonFontAttributes {
             style.maximumLineHeight = scaledLineHeight
         }
 
-        return style
-    }
-
-    func paragraphStyle(forLabel label: UILabel) -> NSParagraphStyle? {
-        let style = self.paragraphStyle(
-            forTextAligment: label.textAlignment,
-            lineBreakMode: label.lineBreakMode
-        )
         return style
     }
 }
