@@ -30,6 +30,9 @@
                             <constraint firstItem="Us4-HO-DFw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ywf-Po-O9A"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="Us4-HO-DFw" id="wmN-wP-4Is"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
