@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		359FC9DB2922B942002143EC /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359FC9DA2922B942002143EC /* InputTextField.swift */; };
+		359FC9DE2922B977002143EC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 359FC9DD2922B977002143EC /* SnapKit */; };
+		359FC9E12922B9F0002143EC /* AbstractFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359FC9E02922B9F0002143EC /* AbstractFont.swift */; };
+		359FC9E32922B9FC002143EC /* TextFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359FC9E22922B9FC002143EC /* TextFont.swift */; };
+		359FC9E62922BAD1002143EC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359FC9E52922BAD1002143EC /* CustomTextField.swift */; };
 		35B6750B2912FC0400A08FB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6750A2912FC0400A08FB4 /* AppDelegate.swift */; };
 		35B6750D2912FC0400A08FB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6750C2912FC0400A08FB4 /* SceneDelegate.swift */; };
 		35B6750F2912FC0400A08FB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6750E2912FC0400A08FB4 /* ViewController.swift */; };
@@ -16,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		359FC9DA2922B942002143EC /* InputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
+		359FC9E02922B9F0002143EC /* AbstractFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFont.swift; sourceTree = "<group>"; };
+		359FC9E22922B9FC002143EC /* TextFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFont.swift; sourceTree = "<group>"; };
+		359FC9E52922BAD1002143EC /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		35B675072912FC0400A08FB4 /* ios_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35B6750A2912FC0400A08FB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35B6750C2912FC0400A08FB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,12 +40,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				359FC9DE2922B977002143EC /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		359FC9DF2922B9E2002143EC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				359FC9E02922B9F0002143EC /* AbstractFont.swift */,
+				359FC9E22922B9FC002143EC /* TextFont.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		359FC9E42922BAC7002143EC /* Textfield */ = {
+			isa = PBXGroup;
+			children = (
+				359FC9DA2922B942002143EC /* InputTextField.swift */,
+				359FC9E52922BAD1002143EC /* CustomTextField.swift */,
+			);
+			path = Textfield;
+			sourceTree = "<group>";
+		};
 		35B674FE2912FC0400A08FB4 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +84,8 @@
 		35B675092912FC0400A08FB4 /* ios_test */ = {
 			isa = PBXGroup;
 			children = (
+				359FC9E42922BAC7002143EC /* Textfield */,
+				359FC9DF2922B9E2002143EC /* Fonts */,
 				35B6750A2912FC0400A08FB4 /* AppDelegate.swift */,
 				35B6750C2912FC0400A08FB4 /* SceneDelegate.swift */,
 				35B6750E2912FC0400A08FB4 /* ViewController.swift */,
@@ -83,6 +113,9 @@
 			dependencies = (
 			);
 			name = ios_test;
+			packageProductDependencies = (
+				359FC9DD2922B977002143EC /* SnapKit */,
+			);
 			productName = ios_test;
 			productReference = 35B675072912FC0400A08FB4 /* ios_test.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +144,9 @@
 				Base,
 			);
 			mainGroup = 35B674FE2912FC0400A08FB4;
+			packageReferences = (
+				359FC9DC2922B976002143EC /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 35B675082912FC0400A08FB4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				359FC9E62922BAD1002143EC /* CustomTextField.swift in Sources */,
+				359FC9DB2922B942002143EC /* InputTextField.swift in Sources */,
 				35B6750F2912FC0400A08FB4 /* ViewController.swift in Sources */,
 				35B6750B2912FC0400A08FB4 /* AppDelegate.swift in Sources */,
+				359FC9E32922B9FC002143EC /* TextFont.swift in Sources */,
 				35B6750D2912FC0400A08FB4 /* SceneDelegate.swift in Sources */,
+				359FC9E12922B9F0002143EC /* AbstractFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +396,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		359FC9DC2922B976002143EC /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		359FC9DD2922B977002143EC /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 359FC9DC2922B976002143EC /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 35B674FF2912FC0400A08FB4 /* Project object */;
 }
