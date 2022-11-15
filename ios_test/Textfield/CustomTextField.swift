@@ -33,4 +33,10 @@ final class CustomTextField: UITextField {
         guard self.isAnyActionAvailable else { return false }
         return super.canPerformAction(action, withSender: sender)
     }
+
+    override func editingRect(forBounds bounds: CGRect) -> CGRect {
+        let bnds = bounds.inset(by: .zero)
+        let editRect = CGRect(x: 0, y: 0, width: bnds.width, height: bnds.height + 4)
+        return editRect
+    }
 }

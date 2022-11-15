@@ -84,6 +84,7 @@ class InputTextField: UIView {
         tf.tintColor = appearance.cyanColor
         tf.textColor = appearance.grey30
         tf.clearButtonMode = .never
+        tf.layer.sublayerTransform = CATransform3DMakeTranslation(0, -2, 0)
         return tf
     }()
 
